@@ -43,4 +43,12 @@ $(document).ready(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+	$('.menu a').click(function(){
+ 
+  $('.trigger').toggle();
+  $('.menu').toggleClass('round');
+  $('.close').toggle();
+  $('.drop-down').toggleClass('down');
+  });
+
 });
